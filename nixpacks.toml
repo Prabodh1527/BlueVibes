@@ -1,6 +1,0 @@
-[build]
-install = "apt-get update && apt-get install -y openjdk-17-jdk"
-build = "mkdir -p out && javac -d out -cp 'web/WEB-INF/lib/*:src' src/*.java"
-
-[start]
-cmd = "java -cp 'out:web/WEB-INF/lib/*:web' LoginServlet"
